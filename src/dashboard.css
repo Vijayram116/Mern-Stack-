@@ -1,0 +1,200 @@
+body {
+  background-color: #dfe6e9;
+}
+.container {
+  gap: 40px;
+   display: flex;
+  flex-direction: row; /* Ensures boxes are in a row */
+  justify-content: space-between; /* Adjust as needed */
+  align-items: flex-start; /* Keeps content inside boxes at the top */
+}
+
+.ledger1,
+.ledger2,
+.transaction {
+  background-color: white;
+  width: 400px;
+  height:450px;
+  display: flex; /* Enables alignment inside */
+  flex-direction: column; /* Ensures content stacks inside */
+  align-items: center; /* Centers content horizontally (optional) */
+  padding: 10px; 
+  margin-top: 5px;/* Adds some spacing inside */
+}
+.d1{
+    text-align: center;
+    color: blue;
+    font-size: 50px;
+}
+
+
+
+.F2{
+  height: 100px;
+  width: 100px;
+  align-items: center;
+}
+
+.update{
+  text-align: left;
+  color: #308695;
+}
+
+.d3,.d4{
+  height:100px;
+  width:400px;
+  font-size: 20px;
+  border-color: black;
+  margin: 10px;
+  color: black;
+  
+}
+.btn1{
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  background-color: blue;
+  color: white;
+  border-radius: 5px;
+  border-color: blue;
+}
+.btn2{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border-color: green;
+  background-color: green;
+  color:white;
+}
+
+hr{
+  width: 450px;
+}
+
+.btn3{
+  width: 100px;
+  height:30px;
+  margin: 10px;
+  border-radius: 25px;
+  background-color: blue;
+  color: white;
+}
+.btn4{
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  color: red;
+  border-color: red;
+
+}
+.f2{
+  height: 150px;
+  width:400px;
+  margin: 10px;
+}
+
+.div1{
+  background-color: pink;
+  width: 400px;
+  height: 150px;
+  text-align: center;
+  color:#308695;
+  border-radius: 10px;
+}
+.ic{
+  display: inline;
+}
+.inc{
+  border : 2px solid green;
+  width:300px;
+  text-align: center;
+  margin: 20px;
+  color: green;
+}
+.exp{
+  border : 2px solid red;
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  color: red;
+}
+
+.transaction{
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+.transaction h3{
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f1f1f1;
+  margin-bottom:50px;
+  font-weight: bold;
+  color: #308695;
+  font-size:27px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.trans{
+  list-style-type: none;
+  width: 100%;
+
+}
+.trans li{
+  width: 100%;
+  background-color: #fff;
+  color: #333;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, 
+  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10px;
+  margin: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+
+}
+
+.trans li.inc{
+  border-left:5px solid #1dd1a1;
+}
+
+.trans li.exp1{
+  border-left:5px solid #ee5253;
+}
+.btn-del{
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width:20px;
+  height: 20px;
+  border-radius: 50%;
+  color:#fff;
+  background-color: #e74c3c;
+  border: none;
+  font-size: 18px;
+  line-height: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.trans li:hover .btn-del{
+  opacity:1;
+}
+
+::-webkit-scrollbar{
+  width:5px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #2e86de;
+  border-radius: 8px;
+}
